@@ -1,10 +1,11 @@
 import cv2 as cv
 import numpy as np
-import imutils as imts
 import height_estimation_module as hem
 from datetime import date
+from pathlib import Path
 
-IMAGE_PATH = "D:\\CVG Lab\\height_estimate\\v1\\images\\lums.png"
+IMAGE_PATH = str(Path.cwd().joinpath("images/lums.png"))
+print(IMAGE_PATH)
 WINDOW_NAME = "image"
 
 drawing = False
